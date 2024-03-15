@@ -72,7 +72,6 @@ public class Main {
                         myWriter.write("====================== \n");
                         myWriter.write("BinarFud\n");
                         myWriter.write("======================\n");
-                        myWriter.write("\n ");
                         myWriter.write("Terima kasih sudah memesan di BinarFud \n Dibawah ini adalah pesanan Anda \n");
                         myWriter.write(pesanan);
                         myWriter.write("--------------------------------+\n");
