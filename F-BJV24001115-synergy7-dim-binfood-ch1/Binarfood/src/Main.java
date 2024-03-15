@@ -64,23 +64,23 @@ public class Main {
                 System.out.println("1. Konfirmasi dan Bayar");
                 System.out.println("2. Kembali ke menu utama");
                 System.out.println("0. Keluar aplikasi");
+                System.out.print("=> ");
                 pilihan = scanner.nextInt();
                 if (pilihan == 1) {
                     try {
                         FileWriter myWriter = new FileWriter("struk.txt");
-                        myWriter.write("======================");
-                        myWriter.write("BinarFud");
-                        myWriter.write("======================");
-                        myWriter.write(" ");
-                        myWriter.write("Terima kasih sudah memesan di BinarFud");
-                        myWriter.write("Dibawah ini adalah pesanan Anda");
+                        myWriter.write("====================== \n");
+                        myWriter.write("BinarFud\n");
+                        myWriter.write("======================\n");
+                        myWriter.write("\n ");
+                        myWriter.write("Terima kasih sudah memesan di BinarFud \n Dibawah ini adalah pesanan Anda \n");
                         myWriter.write(pesanan);
-                        myWriter.write("--------------------------------+");
-                        myWriter.write("Total: Rp" + total);
-                        myWriter.write("Pembayaran : BinarCash");
-                        myWriter.write("=====================");
-                        myWriter.write("Simpan struk ini sebagai bukti pembayaran");
-                        myWriter.write("=====================");
+                        myWriter.write("--------------------------------+\n");
+                        myWriter.write("Total: Rp" + total + "\n");
+                        myWriter.write("Pembayaran : BinarCash \n");
+                        myWriter.write("===================== \n");
+                        myWriter.write("Simpan struk ini sebagai bukti pembayaran\n");
+                        myWriter.write("===================== \n");
                         myWriter.close();
                         System.out.println("Struk pembayaran telah disimpan sebagai struk.txt");
                     } catch (IOException e) {
