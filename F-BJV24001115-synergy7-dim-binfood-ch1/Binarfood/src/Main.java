@@ -15,11 +15,11 @@ public class Main {
             System.out.println("================================");
             System.out.println("** Selamat Datang di BinarFud **");
             System.out.println("================================");
-            System.out.println("1. Nasi Goreng      | Rp15,000");
-            System.out.println("2. Mie Goreng       | Rp13,000");
-            System.out.println("3. Nasi + Ayam      | Rp18,000");
-            System.out.println("4. Es Teh Manis     | Rp3,000");
-            System.out.println("5. Es Jeruk         | Rp5,000");
+            System.out.println("1. Nasi Goreng      | Rp15.000");
+            System.out.println("2. Mie Goreng       | Rp13.000");
+            System.out.println("3. Nasi + Ayam      | Rp18.000");
+            System.out.println("4. Es Teh Manis     | Rp3.000");
+            System.out.println("5. Es Jeruk         | Rp5.000");
             System.out.println("99. Pesan dan Bayar");
             System.out.println("0. Keluar aplikasi");
             System.out.print("=> ");

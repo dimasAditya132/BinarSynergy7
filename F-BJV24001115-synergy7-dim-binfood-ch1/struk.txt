@@ -3,13 +3,12 @@ BinarFud
 ======================
 
  Terima kasih sudah memesan di BinarFud 
- Dibawah ini adalah pesanan AndaNasi Goreng x 5
+ Dibawah ini adalah pesanan Anda 
 Mie Goreng x 4
-Nasi + Ayam x 3
-Es Teh Manis x 2
-Es Jeruk x 1
+Nasi + Ayam x 2
+Es Jeruk x 3
 --------------------------------+
-Total: Rp192000
+Total: Rp103000
 Pembayaran : BinarCash 
 ===================== 
 Simpan struk ini sebagai bukti pembayaran
