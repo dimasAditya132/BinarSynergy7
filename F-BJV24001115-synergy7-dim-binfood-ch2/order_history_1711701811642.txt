@@ -1,3 +1,0 @@
-null
-Nasi Goreng, 4, 15000, 60000
-Nasi Goreng, 1, 15000, 15000

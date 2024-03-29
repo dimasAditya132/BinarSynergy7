@@ -1,9 +1,0 @@
-null
-Nasi + Ayam, 5, 18000
-Total: 90000
-null
-Nasi Goreng, 21, 15000
-Total: 315000
-null
-Mie Goreng, 5, 13000
-Total: 65000
