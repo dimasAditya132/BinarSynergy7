@@ -1,27 +1,27 @@
 
-@	java:S106 "+Replace this use of System.out by a logger.(äáÒ¼
-E	java:S106#"+Replace this use of System.out by a logger.(ôÊ¬Ûùÿÿÿÿ
-@	java:S106'"+Replace this use of System.out by a logger.(øûç½
-@	java:S106*"+Replace this use of System.out by a logger.(™¶ÊÑ
-V
-java:S1117."@Rename "selectedItem" which hides the field declared at line 22.(áı¹Ã
-@	java:S1061"+Replace this use of System.out by a logger.(ÜÅÛ¶
-E	java:S1067"+Replace this use of System.out by a logger.(ÅË ×ıÿÿÿÿ
-@	java:S106<"+Replace this use of System.out by a logger.(¨£Ãò
-E	java:S106="+Replace this use of System.out by a logger.(‡ÀØ·øÿÿÿÿ
-@	java:S106>"+Replace this use of System.out by a logger.(­Ñ¾£
-E	java:S106?"+Replace this use of System.out by a logger.(şÆ´§úÿÿÿÿ
-@	java:S106J"+Replace this use of System.out by a logger.(‡ÿ¿
-E	java:S106M"+Replace this use of System.out by a logger.(èÌèıÿÿÿÿ
-a
-java:S6201Y"FReplace this instanceof check and cast with 'instanceof Food foodItem'(ê˜ˆŞÿÿÿÿÿ
-i
-java:S6201\"NReplace this instanceof check and cast with 'instanceof Beverage beverageItem'(ÑŞšøÿÿÿÿ
-I
-java:S1128"4Remove this unused import 'org.example.view.Helper'.(ÕÁ·z
-L
-java:S1128"6Remove this unused import 'org.example.view.MenuView'.(à…­—
-R
-java:S1128"=Remove this unused import 'java.util.InputMismatchException'.(İ§1
-K
-java:S1068"0Remove this unused "selectedItem" private field.(Ûòšüÿÿÿÿ
+f	java:S106 "+Replace this use of System.out by a logger.(äáÒ¼J$cc591b48-244c-4104-b0d1-fee2001347f3
+k	java:S106#"+Replace this use of System.out by a logger.(ôÊ¬ÛùÿÿÿÿJ$735eac01-1f50-48ea-92c5-68d532195010
+f	java:S106'"+Replace this use of System.out by a logger.(øûç½J$cdbf00e2-c1e9-4d08-b34e-42c9b550900a
+f	java:S106*"+Replace this use of System.out by a logger.(™¶ÊÑJ$d2cda06c-d8d5-41aa-92f4-554380a84784
+|
+java:S1117."@Rename "selectedItem" which hides the field declared at line 22.(áı¹ÃJ$85ad9fd9-440e-4aa2-bcff-98970c506823
+f	java:S1061"+Replace this use of System.out by a logger.(ÜÅÛ¶J$621a354f-7503-45bb-83b8-0cc3112dba11
+k	java:S1067"+Replace this use of System.out by a logger.(ÅË ×ıÿÿÿÿJ$05af35d6-5a66-4237-a3a4-7a0c2b10c38f
+f	java:S106<"+Replace this use of System.out by a logger.(¨£ÃòJ$e1532b41-ebeb-40a9-9f6f-a691b2b46d12
+k	java:S106="+Replace this use of System.out by a logger.(‡ÀØ·øÿÿÿÿJ$3c9f3e1f-a0c6-4da1-aec5-39ce1afa794a
+f	java:S106>"+Replace this use of System.out by a logger.(­Ñ¾£J$dea9ecbd-c0d4-4fe0-bbc0-fdc564f3edb6
+k	java:S106?"+Replace this use of System.out by a logger.(şÆ´§úÿÿÿÿJ$a76edcf2-cb92-4067-b348-9847a3b42dd0
+f	java:S106J"+Replace this use of System.out by a logger.(‡ÿ¿J$d6b4ec6a-92e5-48e2-b48d-a8c6aaa9d186
+k	java:S106M"+Replace this use of System.out by a logger.(èÌèıÿÿÿÿJ$8a0f61a7-529a-4200-9bb5-cea84c6ffe5c
+‡
+java:S6201Y"FReplace this instanceof check and cast with 'instanceof Food foodItem'(ê˜ˆŞÿÿÿÿÿJ$9de642df-a88b-4898-811d-51b6c965f1e0
+
+java:S6201\"NReplace this instanceof check and cast with 'instanceof Beverage beverageItem'(ÑŞšøÿÿÿÿJ$0f4f1854-2f27-42c4-9197-d4f3ecc2915a
+o
+java:S1128"4Remove this unused import 'org.example.view.Helper'.(ÕÁ·zJ$40eebb79-2af6-40f4-93c3-10b165e9f5fe
+r
+java:S1128"6Remove this unused import 'org.example.view.MenuView'.(à…­—J$fc106d50-f592-43e7-a9c6-9d5eaa071215
+x
+java:S1128"=Remove this unused import 'java.util.InputMismatchException'.(İ§1J$82d48c22-179e-41e7-ac33-15838bea5e61
+q
+java:S1068"0Remove this unused "selectedItem" private field.(ÛòšüÿÿÿÿJ$823d9a30-3240-48f7-acb5-d2b9cf919ace
