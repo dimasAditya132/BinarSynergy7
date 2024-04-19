@@ -1,9 +1,0 @@
-===============================
-Selamat Datang di BinFood
-===============================
-Es Teh Manis, @ 3, Rp. 5000 	 15000
-Mie Goreng, @ 1, Rp. 13000 	 13000
-Es Teh Manis, @ 5, Rp. 5000 	 25000
-Es Jeruk , @ 1, Rp. 7000 	 7000
-===============================
-Total Harga: Rp. 60000

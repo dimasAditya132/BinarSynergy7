@@ -1,8 +1,0 @@
-===============================
-Selamat Datang di BinFood
-===============================
-Nasi Goreng          @ 4, Rp. 15000	Rp. 60000
-Nasi + Ayam          @ 2, Rp. 18000	Rp. 36000
-Es Teh Manis         @ 2, Rp. 5000	Rp. 10000
-===============================
-Total Harga: Rp. 106000
