@@ -1,0 +1,32 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆË½ùÿÿÿÿ8Ğ˜ö1J$2f6f7647-a0c3-490e-a71e-8ac8865e91c0
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8±Ğ˜ö1J$c1829809-f486-42ad-ae3c-d71b64f2ca24
+r	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÈĞ˜ö1J$86708023-bed3-4f6c-ac1c-f20d63032cbc
+m	java:S106"+Replace this use of System.out by a logger.(±¹8ÉĞ˜ö1J$260f45f2-8694-4814-b381-d980e9223571
+m	java:S106"+Replace this use of System.out by a logger.(Ê­ê‹8ÉĞ˜ö1J$307645cc-7cfd-4675-b63d-f5312469de94
+r	java:S106"+Replace this use of System.out by a logger.(€ïØ€ıÿÿÿÿ8ÊĞ˜ö1J$e58717f0-e8aa-4183-9df2-ec5dae681e61
+m	java:S106"+Replace this use of System.out by a logger.(Ê¿µ×8ÊĞ˜ö1J$847eb021-e3a4-4b4c-9db9-b9bd2bf23ca8
+r	java:S106"+Replace this use of System.out by a logger.(Æ¾¥ÿÿÿÿÿ8ËĞ˜ö1J$c1bdeb66-a787-4b53-8532-4431589a376d
+i	java:S131!""Add a default case to this switch.(Éöøÿÿÿÿ8ÌĞ˜ö1J$b60b539b-2ea7-402a-851b-11bd48756ffb
+r	java:S1063"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÏĞ˜ö1J$a706448a-e35e-436e-a917-b077ba71a139
+m	java:S1064"+Replace this use of System.out by a logger.(èÉ¾ü8ÏĞ˜ö1J$2eeda3f2-9913-486b-9170-2e763adb0f45
+r	java:S1065"+Replace this use of System.out by a logger.(– ªˆÿÿÿÿÿ8ÏĞ˜ö1J$36d09292-bf49-4236-906a-7f2c6da49c9c
+m	java:S1067"+Replace this use of System.out by a logger.(ÿş¿8ĞĞ˜ö1J$05b7a806-453f-4bde-8969-e82a547e87af
+r	java:S1069"+Replace this use of System.out by a logger.(³ïÈ«úÿÿÿÿ8ÑĞ˜ö1J$2e9af639-5bc3-426c-946a-ea079dadf106
+r	java:S106E"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8×Ğ˜ö1J$9f625d2d-7ea0-41f0-999a-bdec2d9ee373
+r	java:S106F"+Replace this use of System.out by a logger.(µ¬…ßüÿÿÿÿ8×Ğ˜ö1J$900c6d2c-cec5-495c-b63a-097a275d5825
+m	java:S106G"+Replace this use of System.out by a logger.(ˆçŒ8ØĞ˜ö1J$0ca5dc15-5492-43ec-af87-dbb9c04bfc27
+r	java:S106H"+Replace this use of System.out by a logger.(Õåãõşÿÿÿÿ8ÙĞ˜ö1J$8924fc53-1c34-46d1-9f23-910c41b32475
+l	java:S106I"+Replace this use of System.out by a logger.(ˆ®š78ÚĞ˜ö1J$1f0cfa1e-47e8-4b5a-8795-6c192149f6b7
+r	java:S106J"+Replace this use of System.out by a logger.(Æ¾¥ÿÿÿÿÿ8ÛĞ˜ö1J$c0fee91e-8c76-4745-a715-08547af370cc
+i	java:S131L""Add a default case to this switch.(Éöøÿÿÿÿ8ÜĞ˜ö1J$78474c7c-f60a-4861-9968-436524330abb
+r	java:S106N"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÜĞ˜ö1J$e42f2154-af51-4094-a24a-e54f1b27296b
+m	java:S106P"+Replace this use of System.out by a logger.(†ÑÅƒ8İĞ˜ö1J$05909328-619d-4c6c-807d-dcac2c1f54db
+l	java:S106R"+Replace this use of System.out by a logger.(Û «8İĞ˜ö1J$1b79f047-b26b-4dde-b93b-6d54e2730dd3
+r	java:S106Y"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ŞĞ˜ö1J$bfd07b76-347b-4104-9d00-c8f012fd7e68
+m	java:S106["+Replace this use of System.out by a logger.(Ÿ§Ú©8ßĞ˜ö1J$31fe5eee-fae1-418d-9739-8e8e36aaa8a0
+m	java:S106]"+Replace this use of System.out by a logger.(•—ö÷8ßĞ˜ö1J$594236ca-8a49-4560-b01f-a3a6c555b5cc
+r	java:S106d"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8âĞ˜ö1J$9afa8d0f-e124-4502-98c9-0868a97de146
+m	java:S106f"+Replace this use of System.out by a logger.(„µÊ8âĞ˜ö1J$71cb1177-50a1-408c-bbfe-3359ec58825f
+r	java:S106m"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ãĞ˜ö1J$179b083d-cea8-4b44-9371-4986715746a4

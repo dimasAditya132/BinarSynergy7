@@ -1,0 +1,53 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆË½ùÿÿÿÿ8¼”Òšö1J$b1d285da-16fa-4892-8fda-1eec64c9368f
+£	java:S116""aRename this field "OrderDetailOfUserOrder" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®¦ôÆ8æ”Òšö1J$01ae4250-ebc5-43a5-9668-58d8d0bea32b
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8è”Òšö1J$d362ae26-a4b5-45fd-8460-e7a07dcbe8f7
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ê”Òšö1J$60c875d0-a9b1-49ec-8a56-021e8fefe339
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ê”Òšö1J$cf7e7494-21ca-4e2a-9fa7-b616e2ad9144
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ê”Òšö1J$a0360327-0d8c-4210-9ca0-2c962de1b517
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ê”Òšö1J$128b7d70-20f8-4c77-bdfb-584b185bc92a
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ê”Òšö1J$2b827c46-49e4-4a9f-9eeb-2f81cf5d3207
+¢
+java:S1450"_Remove the "merchantFromUser" field and declare it as a local variable in the relevant methods.(¼şÁ®8ò”Òšö1J$af660b96-2658-4820-9f8c-9e533c6d9b66
+¡
+java:S1450"^Remove the "productFromUser" field and declare it as a local variable in the relevant methods.(ÒîúÓ8ó”Òšö1J$70ca7db8-36d3-4a3d-9ef7-04c872f74b46
+¢
+java:S1450!"_Remove the "quantityFromUser" field and declare it as a local variable in the relevant methods.(ã­©8ô”Òšö1J$025765b9-fd78-4aaf-8ff8-4edeea531b90
+r	java:S106%"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8„•Òšö1J$11e0dbc3-a09e-4178-ab52-c0bcc540ad01
+m	java:S106&"+Replace this use of System.out by a logger.(ÖÁ®ñ8…•Òšö1J$c3940b5b-360a-40ce-800a-a6aaf8db6b38
+r	java:S106'"+Replace this use of System.out by a logger.(ıÛ¤ùÿÿÿÿ8†•Òšö1J$62944260-49e7-4264-9491-d1d9b922cb77
+m	java:S106("+Replace this use of System.out by a logger.(˜ã–É8‡•Òšö1J$d0bb7295-8dd9-44ee-89f3-af1802a85a4b
+m	java:S106-"+Replace this use of System.out by a logger.(®¶Àñ8‹•Òšö1J$5fb32d9b-b7b1-483d-90ac-6e416bd41580
+r	java:S1060"+Replace this use of System.out by a logger.(ñÜ“úÿÿÿÿ8•Òšö1J$570197fd-69ed-4518-ac11-fdddd9096855
+r	java:S1063"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8•Òšö1J$447ca72c-d40b-4ef4-abba-61e52187ae4c
+r	java:S1064"+Replace this use of System.out by a logger.(ÚÒ®Ãüÿÿÿÿ8•Òšö1J$3e8694e0-48a7-44bb-b338-fcb48a582a56
+r	java:S1065"+Replace this use of System.out by a logger.(ÎÛøşıÿÿÿÿ8•Òšö1J$d300d917-7b50-4ada-81d8-3c20b1f388ad
+r	java:S1066"+Replace this use of System.out by a logger.(é©ªáÿÿÿÿÿ8•Òšö1J$46f3bfb1-1b70-47a1-ac8f-2371d4649cdd
+r	java:S1068"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8‘•Òšö1J$f6df8fa2-007f-4428-afc1-bc2739868938
+r	java:S1069"+Replace this use of System.out by a logger.(¸âèæıÿÿÿÿ8‘•Òšö1J$4560742b-dd35-4743-82da-f7f5cb961374
+r	java:S106:"+Replace this use of System.out by a logger.(­–´½øÿÿÿÿ8‘•Òšö1J$ac8ce23c-e707-4aa1-ba94-0c01dcb7ee64
+r	java:S106@"+Replace this use of System.out by a logger.(ë·­°üÿÿÿÿ8’•Òšö1J$c88d9697-61b3-4a88-99fb-36d022f05ce7
+r	java:S106C"+Replace this use of System.out by a logger.(ÃŸˆùÿÿÿÿ8••Òšö1J$78602e5b-6c65-4a13-98d0-6bc696a79d0b
+r	java:S106J"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8˜•Òšö1J$246e86c6-6891-43f0-b231-4d4e6d408b77
+r	java:S106K"+Replace this use of System.out by a logger.(ë·­°üÿÿÿÿ8˜•Òšö1J$7e7c17d3-b7d3-411e-8ab7-2cbf6af47793
+m	java:S106M"+Replace this use of System.out by a logger.(Ò¸³´8™•Òšö1J$52f3f517-3f75-49bf-896b-c43ceb65db8f
+m	java:S106N"+Replace this use of System.out by a logger.(ÊşÜé8š•Òšö1J$cc0111b9-af7b-49c8-bd93-fed49a7d64a9
+r	java:S106O"+Replace this use of System.out by a logger.(­–´½øÿÿÿÿ8œ•Òšö1J$0c74ea9e-1abd-4388-afed-261dd6c5935e
+m	java:S106S"+Replace this use of System.out by a logger.(ÈŸƒß8•Òšö1J$2c88df7b-b470-44f4-abc0-d3ffadf36e0c
+m	java:S106\"+Replace this use of System.out by a logger.(¿ŒÇŠ8¡•Òšö1J$f31f456f-bffc-43c4-9dab-93260ae08bfc
+m	java:S106_"+Replace this use of System.out by a logger.(²¶§ô8¥•Òšö1J$ad5668ba-3ba8-4561-9fc7-9c21711b7a6e
+r	java:S106c"+Replace this use of System.out by a logger.(Ñ×™“ùÿÿÿÿ8§•Òšö1J$021517fa-48cb-4341-93c1-0e195efa8cb7
+r	java:S106d"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8©•Òšö1J$9d6755f2-0968-48f7-9892-f1fa6e0ed8b2
+m	java:S106e"+Replace this use of System.out by a logger.(îá‘ş8«•Òšö1J$7655f865-9847-4a71-be3a-3ea72fa49489
+m	java:S106f"+Replace this use of System.out by a logger.(—§ë•8«•Òšö1J$3c023fc9-d730-4a49-a21d-4c14c3ca2015
+m	java:S106g"+Replace this use of System.out by a logger.(˜„æâ8¬•Òšö1J$b4d3ccb1-46d4-48f4-afe7-0e2a93ea0f35
+H
+java:S2201q"+The return value of "collect" must be used.(ª™¨¹8¸Õù÷1
+o
+java:S6204q"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÀÕù÷1

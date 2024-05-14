@@ -1,0 +1,11 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å°äİ8½Ô³‹ö1J$d847dec4-99bf-4ca4-83c3-3dc2f6a6f902
+c
+java:S2259"FA "NullPointerException" could be thrown; "merchant" is nullable here.(Š«Ïˆ8êÇ¦ö1
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÃÔ³‹ö1J$90f32158-6d9b-40b6-981d-49e9d2c10a53
+r	java:S106"+Replace this use of System.out by a logger.(ÑéŠªøÿÿÿÿ8ßÔ³‹ö1J$58a80398-2fcf-4c28-aed6-dd83180db3de
+L	java:S106!"+Replace this use of System.out by a logger.(ÑéŠªøÿÿÿÿ8úÇ¦ö1
+L	java:S106/"+Replace this use of System.out by a logger.(„Ã´óúÿÿÿÿ8€È¦ö1
+•
+java:S6204@"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8³ÿ‡ö1J$df4769ec-4fcf-4e66-8bfb-204a83bb3d86

@@ -1,0 +1,31 @@
+package com.example.BinFood.repository;
+
+import com.example.BinFood.model.Merchant;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+@Repository
+public interface MerchantRepository extends JpaRepository<Merchant, String> {
+    @Modifying
+    @Transactional
+    @Query(nativeQuery = true, value = "UPDATE merchant m set status = :boolval where m.merchant_name = :mname")
+    void queryUpdateMerchantStatus(@Param("boolval") boolean status, @Param("mname") String mname);
+
+    @Modifying
+    @Transactional
+    @Query(nativeQuery = true, value = "DELETE FROM merchant m where m.merchant_name = :mname")
+    void queryDeleteMerchant(@Param("mname") String mname);
+
+    @Query(nativeQuery = true,value = "SELECT * FROM merchant as m where m.status = true")
+    List<Merchant> queryActiveMerchant(PageRequest pageable);
+
+    @Query(nativeQuery = true,value = "SELECT * FROM merchant m where m.merchant_name = :mname")
+    Merchant queryFindMerchantByName(@Param("mname") String mname);
+}
