@@ -1,0 +1,503 @@
+{
+	"info": {
+		"_postman_id": "8b90cbd5-9b8d-454d-a942-ca27f9bea5a3",
+		"name": "BinarFood",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30166154"
+	},
+	"item": [
+		{
+			"name": "Merchant",
+			"item": [
+				{
+					"name": "Add Merchant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"merchantName\" : \"Warung {{$randomCountry}}\",\r\n    \"merchantLocation\" : \"{{$randomCity}}\",\r\n    \"status\" : \"{{$randomBoolean}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/merchant/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"merchant",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Status Merchant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/merchant/edit/status/Warung%20Sunda?nStatus=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"merchant",
+								"edit",
+								"status",
+								"Warung%20Sunda"
+							],
+							"query": [
+								{
+									"key": "nStatus",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Active Merchant Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/merchant/get-active/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"merchant",
+								"get-active",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Merchant RED",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/merchant/delete/Warung%20Tegal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"merchant",
+								"delete",
+								"Warung%20Tegal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"{{$randomUserName}}\",\r\n    \"password\" : \"12345678\",\r\n    \"emailAddress\" : \"{{$randomExampleEmail}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/user/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"add"
+							]
+						},
+						"description": "Menambahkan pengguna baru. Memerlukan body berisi detail pengguna."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Username",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usernameR\" : \"Meisya\",\r\n    \"emailAddressR\" : \"Madalyn.Beatty30@example.net\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/user/edit/username/Nico71",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"edit",
+								"username",
+								"Nico71"
+							]
+						},
+						"description": "Mengubah username pengguna. Memerlukan username lama sebagai path variable dan body berisi username baru dan alamat email."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"passwordR\" : \"NewPassword\",\r\n    \"emailAddressR\" : \"Madalyn.Beatty30@example.net\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/user/edit/password/Nico71",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"edit",
+								"password",
+								"Nico71"
+							]
+						},
+						"description": "Mengubah password pengguna. Memerlukan username sebagai path variable dan body berisi password baru dan alamat email."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Email",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/user/edit/email/Meisya?newE=nicknicko71@gmail.com&uE=Madalyn.Beatty30@example.net",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"edit",
+								"email",
+								"Meisya"
+							],
+							"query": [
+								{
+									"key": "newE",
+									"value": "nicknicko71@gmail.com"
+								},
+								{
+									"key": "uE",
+									"value": "Madalyn.Beatty30@example.net"
+								}
+							]
+						},
+						"description": "Mengubah alamat email pengguna. Memerlukan username sebagai path variable dan parameter request berisi alamat email baru dan lama."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/user/delete/Meisya?uP=NewPassword&uE=nicknicko71@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"delete",
+								"Meisya"
+							],
+							"query": [
+								{
+									"key": "uP",
+									"value": "NewPassword"
+								},
+								{
+									"key": "uE",
+									"value": "nicknicko71@gmail.com"
+								}
+							]
+						},
+						"description": "Menghapus pengguna. Memerlukan username sebagai path variable dan parameter request berisi password dan alamat email."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\" : \"{{$randomProductName}}\",\r\n    \"productPrice\" : \"{{$randomPrice}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/product/add?merchant=Warung%20Minang",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"add"
+							],
+							"query": [
+								{
+									"key": "merchant",
+									"value": "Warung%20Minang"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Product Name RED",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newProductName\" : \"{{$randomProductName}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/product/edit-name/Rustic%20Fresh%20Pants?merchant=Warung%20Minang",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"edit-name",
+								"Rustic%20Fresh%20Pants"
+							],
+							"query": [
+								{
+									"key": "merchant",
+									"value": "Warung%20Minang"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Product Price RED",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\" : \"{{$randomProductName}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/product/edit-name/Rustic%20Fresh%20Pants?merchant=Warung%20Minang",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"edit-name",
+								"Rustic%20Fresh%20Pants"
+							],
+							"query": [
+								{
+									"key": "merchant",
+									"value": "Warung%20Minang"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product RED",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\" : \"{{$randomProductName}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/product/edit-name/Rustic%20Fresh%20Pants?merchant=Warung%20Minang",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"edit-name",
+								"Rustic%20Fresh%20Pants"
+							],
+							"query": [
+								{
+									"key": "merchant",
+									"value": "Warung%20Minang"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Make Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderDestination\": \"Surabaya\",\r\n    \"orderDetailResponseLists\": [\r\n        {\r\n            \"productQuantity\": 2,\r\n            \"productPrice\": 499.57,\r\n            \"productName\": \"Unbranded Frozen Shoes\"\r\n        },\r\n        {\r\n            \"productQuantity\": 1,\r\n            \"productPrice\": 493.47,\r\n            \"productName\": \"Fantastic Rubber Bike\"\r\n        }\r\n    ],\r\n    \"merchantName\": \"Warung Minang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/order/ordering/Robert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"order",
+								"ordering",
+								"Robert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Display Ordered RED",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderDestination\": \"Surabaya\",\r\n    \"orderDetailResponseLists\": [\r\n        {\r\n            \"productQuantity\": 2,\r\n            \"productPrice\": 499.57,\r\n            \"productName\": \"Unbranded Frozen Shoes\"\r\n        },\r\n        {\r\n            \"productQuantity\": 1,\r\n            \"productPrice\": 493.47,\r\n            \"productName\": \"Fantastic Rubber Bike\"\r\n        }\r\n    ],\r\n    \"merchantName\": \"Warung Minang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/order/ordered/Robert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"order",
+								"ordered",
+								"Robert"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,5 @@
+
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯ô±aJ$e7991600-0506-431a-b499-f9a4d5ebbd89
+–	java:S116#"VRename this field "total_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÇ™ôÿÿÿÿÿJ$7522906f-df72-4ef4-808f-0be486dc7c87
+s
+java:S1874"0Remove this use of "strategy"; it is deprecated.(âß °8ò£Öê÷1J$dc54fe21-2dad-4fd4-8682-335982819ed6
