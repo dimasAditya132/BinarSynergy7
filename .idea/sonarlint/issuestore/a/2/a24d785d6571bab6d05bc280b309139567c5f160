@@ -1,0 +1,16 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©Ü£¨üÿÿÿÿJ$3a70fd54-c57b-48c8-9f58-bad09dd44444
+™
+java:S1450
+"XRemove the "productId" field and declare it as a local variable in the relevant methods.(ƒÕõÓúÿÿÿÿJ$54fb1e15-50c2-4177-a6fb-2920e210023b
+–
+java:S1450"ZRemove the "productName" field and declare it as a local variable in the relevant methods.(…œ£ßJ$28934257-da13-47d0-b30c-4a83b77064fd
+b
+java:S1068"&Remove this unused "id" private field.(æ¨ç†J$2f70ce9f-fc62-48d7-859d-fa3e15335fe3
+n
+java:S1068
+"-Remove this unused "productId" private field.(ƒÕõÓúÿÿÿÿJ$c86f7b19-2c5e-44ec-b053-a437064c18e9
+k
+java:S1068"/Remove this unused "productName" private field.(…œ£ßJ$b507eed4-3a11-4d50-885f-42c7a521acb3
+m
+java:S1068",Remove this unused "quantity" private field.(­ÞÐòþÿÿÿÿJ$eb88c3d3-3d93-4277-bfd8-b31ab698a05d

@@ -1,0 +1,10 @@
+
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»ò¡CJ$c9967b29-d792-42c4-ba61-b80c89e8f227
+Š
+java:S1612)"IReplace this lambda with method reference 'GrantedAuthority.class::cast'.(ñÜ¼øÿÿÿÿJ$f9e33144-60b3-4eb5-8f71-e1d5907efdbf
+h
+java:S1068",Remove this unused "username" private field.(‘ó¹²J$7d7d562b-f422-4e47-bb04-1540d42abd14
+m
+java:S1068",Remove this unused "password" private field.(œãë­úÿÿÿÿJ$fbb26893-0955-472a-bc24-b96066e30afc
+p
+java:S1068"/Remove this unused "authorities" private field.(±É°¥ıÿÿÿÿJ$7e5cca3b-f59b-4528-adb2-8feaad979b25

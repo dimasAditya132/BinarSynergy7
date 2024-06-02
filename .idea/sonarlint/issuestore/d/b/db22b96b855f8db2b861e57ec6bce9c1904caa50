@@ -1,0 +1,8 @@
+
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯ô±aJ$d7727a04-6706-42e2-be11-c7dad9b14f29
+i
+java:S1068"-Remove this unused "orderTime" private field.(—ÿþÁJ$1b9aa86c-e2db-4a1c-bedf-9203524ecc9a
+q
+java:S1068"6Remove this unused "destinationAddress" private field.(Ž­øJ$d3d58182-fefa-443e-9b81-1bcb7b79b710
+i
+java:S1068 "-Remove this unused "completed" private field.(ÚØ’ÄJ$11cc4de7-1e10-461f-83ad-bf3b8a5926fb

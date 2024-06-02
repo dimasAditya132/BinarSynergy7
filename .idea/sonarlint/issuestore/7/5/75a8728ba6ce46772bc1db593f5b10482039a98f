@@ -1,0 +1,14 @@
+
+ˆ	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(£·¥¯8‡©´Óı1J$386baf79-fafd-4572-8e33-1df920d5924b
+ˆ	java:S1126"FDefine and throw a dedicated exception instead of using a generic one.(ÀåïÆ8ˆ©´Óı1J$cd3715ef-7507-47d3-b364-0d1857d236e2
+	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(€É–îøÿÿÿÿ8ˆ©´Óı1J$aae4fac3-17da-45d0-a0c9-d47d9e5eeb7e
+	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8ˆ©´Óı1J$ae13b6aa-4c8e-4bb6-b901-194cdb7df3bb
+ˆ	java:S112^"FDefine and throw a dedicated exception instead of using a generic one.(¤Îî”8‰©´Óı1J$c0de86ca-0205-4a1e-96d6-3f001cbb800d
+	java:S112…"FDefine and throw a dedicated exception instead of using a generic one.(ÛÂØŒùÿÿÿÿ8ÑÈ´Óı1J$35078378-ae26-4fbb-a6b6-ee1f0c7cb9f8
+
+java:S1192,"MDefine a constant instead of duplicating this literal "\" not found" 3 times.(£·¥¯8ÙÈ´Óı1J$cba17205-0484-40c0-9958-f098e3afe4a0
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å°äİ8‘©´Óı1J$755159ba-bee2-4809-9be3-3dc0a8a74332
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Û©´Óı1J$a0ea784a-1444-4ebe-b52d-1fe57459143d
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Û©´Óı1J$ea77c4cd-6a2c-4275-83bd-7b843baa3ad9

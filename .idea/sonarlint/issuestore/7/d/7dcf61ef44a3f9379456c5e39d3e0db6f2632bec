@@ -1,0 +1,14 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©Ü£¨üÿÿÿÿJ$e3e72599-8571-4483-b706-61acdd86f13a
+’
+java:S1450"VRemove the "orderId" field and declare it as a local variable in the relevant methods.(ñÔ»ûJ$d240c754-dd40-4527-89e2-56e5dc216fe4
+˜
+java:S1450"WRemove the "userName" field and declare it as a local variable in the relevant methods.(Û”øÚøÿÿÿÿJ$6d8d4c4f-b7cc-4e22-bca7-fb4c1688e9a2
+g
+java:S1068"+Remove this unused "orderId" private field.(ñÔ»ûJ$d7be7bb6-fd46-4417-9ae3-afe3b578f4ce
+m
+java:S1068",Remove this unused "userName" private field.(Û”øÚøÿÿÿÿJ$3b38b74f-595e-420f-aeb9-65c18ddb81a2
+q
+java:S1068"6Remove this unused "destinationAddress" private field.(Ž­øJ$38c55aec-c866-4c92-8e3f-6da51a40d15e
+o
+java:S1068"3Remove this unused "orderDetailList" private field.(Ñ’çûJ$724a29b0-2530-48b0-ac00-d8dacbeaeab5

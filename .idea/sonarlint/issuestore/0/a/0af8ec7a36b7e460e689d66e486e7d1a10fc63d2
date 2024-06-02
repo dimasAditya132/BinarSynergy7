@@ -1,0 +1,17 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©Ü£¨üÿÿÿÿJ$a901fa88-918a-4aeb-8184-d393d3e64300
+˜
+java:S1450"WRemove the "merchant" field and declare it as a local variable in the relevant methods.(¥ŸÿÙşÿÿÿÿJ$d62fe5fe-896c-4c39-a8ca-6605f22b6e57
+œ
+java:S1450"[Remove the "merchantName" field and declare it as a local variable in the relevant methods.(Ò£Û·ıÿÿÿÿJ$57927c8d-ff83-42ab-96b7-e5b83efa39c4
+g
+java:S1068
+"&Remove this unused "id" private field.(Æí¶áşÿÿÿÿJ$d2523255-eed3-4290-92d2-16c7460f438d
+k
+java:S1068"/Remove this unused "productName" private field.(…œ£ßJ$f9720b84-a8ee-4b32-8b09-90c9edaa7922
+e
+java:S1068")Remove this unused "price" private field.(ÿíJ$1bf018b1-a36d-4197-b6ff-8f142c792efb
+m
+java:S1068",Remove this unused "merchant" private field.(¥ŸÿÙşÿÿÿÿJ$66bf8149-11be-45e2-b8bd-785da1db2948
+q
+java:S1068"0Remove this unused "merchantName" private field.(Ò£Û·ıÿÿÿÿJ$2d03e19e-5cd5-440f-9921-1bb980dcdce2

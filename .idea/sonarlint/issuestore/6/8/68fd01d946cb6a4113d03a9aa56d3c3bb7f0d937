@@ -1,0 +1,14 @@
+
+¢
+java:S1488["`Immediately return this expression instead of assigning it to the temporary variable "delegate".(„áÄ^8²í¥Óı1J$8e2581b2-837d-4f84-972a-3237656a63a6
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(àşæüÿÿÿÿ8·í¥Óı1J$224a062d-ae7c-464f-8334-79070937bb36
+…
+java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ù˜Ôı1J$68173f04-ea0f-4f23-9e15-ba6aaa79856e
+š
+java:S3305-"RInject this field value directly into "filterChain", the only method that uses it.(¨ƒ¼¢ùÿÿÿÿ8İ˜Ôı1J$ff1966b8-161b-4187-88b5-4a7c9e662be7
+t
+java:S1611T"1Remove the parentheses around the "web" parameter(¥»çñ8ˆ³ÿÓı1J$9a9df630-1312-4935-a9e7-b13e4c401eb7
+c
+java:S1128"FRemove this unused import 'com.example.BinFood.security.jwt.JwtUtils'.(¢ƒøó8ø´ƒÔı1
+z
+java:S1128"XRemove this unused import 'com.example.BinFood.security.service.UserDetailsServiceImpl'.(ŒğŠÏùÿÿÿÿ8ø´ƒÔı1
