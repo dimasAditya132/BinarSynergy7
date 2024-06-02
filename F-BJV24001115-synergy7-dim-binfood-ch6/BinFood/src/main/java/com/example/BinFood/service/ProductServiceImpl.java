@@ -19,9 +19,9 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product insertProduct(Product product) {
-       product = productRepository.save(product);
-       log.info("Product data successfully created");
-       return product;
+        product = productRepository.save(product);
+        log.info("Product data successfully created");
+        return product;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class ProductServiceImpl implements ProductService {
         if (newPrice != null) {
             product.setPrice(newPrice);
         }
-        if ((newProductName == null) && (newPrice == null)){
+        if ((newProductName == null) && (newPrice == null)) {
             throw new RuntimeException("No data to update");
         }
         product = productRepository.save(product);
@@ -53,7 +53,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void deleteProduct(Product product) {
         productRepository.delete(product);
-        log.info("Data with product name \""+product.getProductName()+"\" successfully deleted");
+        log.info("Data with product name \"" + product.getProductName() + "\" successfully deleted");
     }
 
     @Override

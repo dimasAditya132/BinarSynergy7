@@ -7,10 +7,14 @@ import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.oauth2.core.oidc.user.OidcUser;
+import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
 import org.springframework.stereotype.Component;
 
 import java.security.Key;
 import java.util.Date;
+
+
 @Component
 public class JwtUtils {
     @org.springframework.beans.factory.annotation.Value("${security.jwt.secret-key}")
@@ -19,27 +23,37 @@ public class JwtUtils {
     @Value("${security.jwt.expiration-time}")
     private long jwtExpiration;
 
-    public String generateToken(Authentication authentication){
-        UserDetailsImpl userPrincipal = (UserDetailsImpl) authentication.getPrincipal();
+    public String generateToken(Authentication authentication) {
+        String username;
+        if (authentication.getPrincipal() instanceof UserDetailsImpl userPrincipal) {
+            username = userPrincipal.getUsername();
+        } else if (authentication.getPrincipal() instanceof OidcUser oidcUser) {
+            username = oidcUser.getEmail();
+        } else if (authentication.getPrincipal() instanceof DefaultOAuth2User defaultOAuth2User) {
+            username = defaultOAuth2User.getAttribute("login");
+        } else {
+            throw new IllegalArgumentException("Unsupported principal type");
+        }
 
         Date now = new Date();
         return Jwts.builder()
-                .setSubject(userPrincipal.getUsername())
+                .setSubject(username)
                 .setIssuedAt(now)
                 .setExpiration(new Date(now.getTime()+jwtExpiration))
                 .signWith(getSignKey(), SignatureAlgorithm.HS256)
                 .compact();
     }
 
-    public String getUsername(String jwt){
-        return Jwts.parserBuilder()
+    public String getUsername(String jwt) {
+        String username = Jwts.parserBuilder()
                 .setSigningKey(getSignKey()).build()
                 .parseClaimsJws(jwt)
                 .getBody()
                 .getSubject();
+        return username;
     }
 
-    private Key getSignKey(){
+    private Key getSignKey() {
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         return Keys.hmacShaKeyFor(keyBytes);
     }

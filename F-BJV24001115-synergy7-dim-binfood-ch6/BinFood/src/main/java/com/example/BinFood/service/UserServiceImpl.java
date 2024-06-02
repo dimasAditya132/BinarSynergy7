@@ -57,6 +57,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User getUserByEmail(String emailAddress) {
+        Optional<User> user = userRepository.findByEmailAddress(emailAddress);
+        if (user.isEmpty()) {
+            throw new RuntimeException("Data with email \"" + emailAddress + "\" not found");
+        }
+        return user.get();
+    }
+
+    @Override
     public List<User> getUserByUsernameLike(String s) {
         List<User> users = userRepository.findByUsernameLike("%" + s + "%");
         if (users.isEmpty()) {

@@ -273,3 +273,11 @@ j
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 ¨
 xF-BJV24001115-synergy7-dim-binfood-ch5/.idea/sonarlint/securityhotspotstore/8/2/82e15c0e1dea5460d610023d44f291047567389e,2\d\2d3b161b1cfec93941b42cf85416b8127d2b5cab
+f
+6F-BJV24001115-synergy7-dim-binfood-ch5/BinFood/pom.xml,7\4\748849eaff395d4ba9bf9ab15777b84b90fbf154
+™
+iF-BJV24001115-synergy7-dim-binfood-ch6/BinFood/src/main/java/com/example/BinFood/service/MailService.java,2\0\20be201a99c03e6f5e72ad68c225412442616bd3
+ƒ
+SF-BJV24001115-synergy7-dim-binfood-ch6/BinFood/src/main/java/config/MailConfig.java,6\5\65658ede02fb9781804a6fdf7174af3dbbbf7d2c
+—
+gF-BJV24001115-synergy7-dim-binfood-ch6/BinFood/src/main/java/com/example/BinFood/config/MailConfig.java,8\1\812a3baa86204a95936bb465f571e4813e4409f8

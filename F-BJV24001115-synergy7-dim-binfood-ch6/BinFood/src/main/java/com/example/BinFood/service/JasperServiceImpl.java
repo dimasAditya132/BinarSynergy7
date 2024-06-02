@@ -39,15 +39,15 @@ public class JasperServiceImpl implements JasperService {
 
         Map<String, Object> params = new HashMap<>();
         params.put("Order ID", order.getId());
-        params.put("Order Time", order.getOrderTime().toString().substring(0,19));
+        params.put("Order Time", order.getOrderTime().toString().substring(0, 19));
         params.put("Username", user.getUsername());
 
         JasperPrint jasperPrint;
         byte[] reportContent = null;
 
-        try{
+        try {
             jasperPrint = JasperFillManager.fillReport(jasperReport, params, dataSource);
-            switch (format){
+            switch (format) {
                 case "pdf" -> reportContent = JasperExportManager.exportReportToPdf(jasperPrint);
                 case "xml" -> reportContent = JasperExportManager.exportReportToXml(jasperPrint).getBytes();
                 default -> throw new RuntimeException();

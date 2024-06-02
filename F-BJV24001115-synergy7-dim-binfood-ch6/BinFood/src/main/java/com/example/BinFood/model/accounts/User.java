@@ -3,6 +3,7 @@ package com.example.BinFood.model.accounts;
 import com.example.BinFood.model.Order;
 import jakarta.persistence.*;
 import lombok.*;
+import lombok.experimental.Accessors;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.SQLRestriction;
 
@@ -17,25 +18,20 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Accessors(chain = true)
 @Table(name = "users")
 @SQLDelete(sql = "update users set deleted = true where id = ?")
 @SQLRestriction("deleted = false")
 public class User {
+    boolean deleted = Boolean.FALSE;
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-
     private String name;
-
     @Column(unique = true)
     private String username;
-
     private String emailAddress;
-
     private String password;
-
-    boolean deleted = Boolean.FALSE;
-
     @OneToMany(mappedBy = "user")
     private List<Order> orderList;
 

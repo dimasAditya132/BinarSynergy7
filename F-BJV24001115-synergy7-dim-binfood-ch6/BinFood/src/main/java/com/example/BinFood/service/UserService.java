@@ -12,6 +12,7 @@ public interface UserService {
     User getUserByUsername(String username);
 
     User getUserById(String id);
+    User getUserByEmail(String emailAddress);
 
     List<User> getUserByUsernameLike(String s);
 
@@ -21,5 +22,5 @@ public interface UserService {
 
     User updateUser(User user);
 
-    void createUserPostLogin(String name, String email);
+    void createUserPostLogin(String username, String email);
 }

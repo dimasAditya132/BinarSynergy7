@@ -1,9 +1,11 @@
 package com.example.BinFood.controller;
 
 import com.example.BinFood.payload.LoginRequestDTO;
+import com.example.BinFood.payload.Response;
 import com.example.BinFood.security.jwt.JwtResponse;
 import com.example.BinFood.security.jwt.JwtUtils;
 import com.example.BinFood.security.service.UserDetailsImpl;
+import com.example.BinFood.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,11 +30,14 @@ public class AuthController {
     @Autowired
     JwtUtils jwtUtils;
 
+    @Autowired
+    MailService mailService;
+
     @PostMapping("/signin")
-    public ResponseEntity<Map<String, Object>> authenticate(@RequestBody LoginRequestDTO loginRequestDTO) {
+    public ResponseEntity<Response> authenticate(@RequestBody LoginRequestDTO loginRequestDTO) {
         Authentication authentication = authenticationManager
-                .authenticate(new UsernamePasswordAuthenticationToken(loginRequestDTO.getUsername(),
-                        loginRequestDTO.getPassword()));
+                .authenticate(new UsernamePasswordAuthenticationToken(loginRequestDTO.getUsername(), loginRequestDTO.getPassword())
+                );
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtUtils.generateToken(authentication);
@@ -40,24 +45,17 @@ public class AuthController {
         List<String> roles = userDetails.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority)
                 .toList();
-        Map<String, Object> response = new HashMap<>();
-        response.put("status", "success");
 
-        Map<String, Object> data = new HashMap<>();
         JwtResponse jwtResponse = new JwtResponse(jwt, userDetails.getUsername(), roles);
-        data.put("jwt", jwtResponse);
-        response.put("data", data);
-        return new ResponseEntity<>(response, HttpStatus.CREATED);
+        return new ResponseEntity<>(new Response.Success(jwtResponse), HttpStatus.CREATED);
     }
 
     @GetMapping("/oauth2/success")
-    public ResponseEntity<Map<String, Object>> googleLoginSuccess(Authentication authentication) {
+    public ResponseEntity<Response> googleLoginSuccess(Authentication authentication) {
         // Create a new Principal object with modified authorities
         OidcUser oidcUser = (OidcUser) authentication.getPrincipal();
         Collection<GrantedAuthority> authorities = new ArrayList<>(oidcUser.getAuthorities());
-        authorities.add(new SimpleGrantedAuthority("ROLE_USER")); // TODO: fix it. Get it from DB
-
-        UserDetailsImpl modifiedUserDetails = UserDetailsImpl.build(oidcUser);
+        authorities.add(new SimpleGrantedAuthority("ROLE_CUSTOMER"));
         OidcUser modifiedOidcUser = new DefaultOidcUser(authorities, oidcUser.getIdToken(), oidcUser.getUserInfo());
 
         // Create a new Authentication object with the modified Principal
@@ -76,13 +74,14 @@ public class AuthController {
                 .toList();
 
         // Prepare response
-        Map<String, Object> response = new HashMap<>();
-        response.put("status", "success");
-        Map<String, Object> data = new HashMap<>();
-        JwtResponse jwtResponse = new JwtResponse(jwt, modifiedUserDetails.getUsername(), roles);
-        data.put("jwt", jwtResponse);
-        response.put("data", data);
+        JwtResponse jwtResponse = new JwtResponse(jwt, oidcUser.getEmail(), roles);
 
-        return new ResponseEntity<>(response, HttpStatus.CREATED);
+        return new ResponseEntity<>(new Response.Success(jwtResponse), HttpStatus.CREATED);
+    }
+
+    @GetMapping("/test/mail")
+    public String sendMail() {
+        mailService.sendMail("dimasaaditya456@gmail.com", "subject test mail", "Hello World");
+        return "Mail sent";
     }
 }

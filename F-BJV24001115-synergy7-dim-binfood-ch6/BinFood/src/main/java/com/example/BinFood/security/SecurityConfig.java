@@ -6,6 +6,7 @@ import com.example.BinFood.security.jwt.JwtAuthTokenFilter;
 import com.example.BinFood.security.jwt.JwtUtils;
 import com.example.BinFood.security.service.UserDetailsServiceImpl;
 import com.example.BinFood.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -17,8 +18,8 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
-import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserService;
@@ -37,17 +38,15 @@ import java.util.Arrays;
 @EnableMethodSecurity
 public class SecurityConfig implements WebMvcConfigurer {
     final AuthEntryPointJwt authEntryPointJwt;
-    final UserDetailsServiceImpl userDetailService;
+    final
+    UserDetailsService userDetailsService;
 
-    final JwtUtils jwtUtils;
+    @Autowired
+    UserService userService;
 
-    final UserService userService;
-
-    public SecurityConfig(AuthEntryPointJwt unauthorizedHandler, UserDetailsServiceImpl userDetailService, JwtUtils jwtUtils, UserService userService) {
-        this.authEntryPointJwt = unauthorizedHandler;
-        this.userDetailService = userDetailService;
-        this.jwtUtils = jwtUtils;
-        this.userService = userService;
+    public SecurityConfig(AuthEntryPointJwt authEntryPointJwt, UserDetailsService userDetailsService) {
+        this.authEntryPointJwt = authEntryPointJwt;
+        this.userDetailsService = userDetailsService;
     }
 
     @Bean
@@ -58,11 +57,25 @@ public class SecurityConfig implements WebMvcConfigurer {
                         auth
                                 .requestMatchers(HttpMethod.GET, "merchant").permitAll()
                                 .requestMatchers("auth/**").permitAll()
-                                .requestMatchers(HttpMethod.POST,"user").permitAll()
+                                .requestMatchers(HttpMethod.POST, "user").permitAll()
+                                .requestMatchers("/auth/test/**").permitAll()
                                 .anyRequest().authenticated()
+                )
+                .authenticationProvider(authenticationProvider())
+                .addFilterBefore(authTokenFilter(), UsernamePasswordAuthenticationFilter.class)
+                .formLogin(Customizer.withDefaults())
+                .oauth2Login(oauth2 -> oauth2
+                                .userInfoEndpoint(userInfo -> userInfo
+                                        .oidcUserService(this.oidcUserService())
+                                )
+                                .successHandler((request, response, authentication) -> {
+                                    DefaultOidcUser oidcUser = (DefaultOidcUser) authentication.getPrincipal();
+                                    userService.createUserPostLogin(
+                                            oidcUser.getAttribute("email"), oidcUser.getAttribute("email")
+                                    );
+                                    response.sendRedirect("/auth/oauth2/success");
+                                })
                 );
-        http.authenticationProvider(authenticationProvider());
-        http.addFilterBefore(authTokenFilter(), UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
 
@@ -93,7 +106,7 @@ public class SecurityConfig implements WebMvcConfigurer {
     public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
         authenticationProvider.setPasswordEncoder(passwordEncoder());
-        authenticationProvider.setUserDetailsService(userDetailService);
+        authenticationProvider.setUserDetailsService(userDetailsService);
         return authenticationProvider;
     }
 

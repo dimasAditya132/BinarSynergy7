@@ -29,7 +29,7 @@ public class ProductController {
     }
 
     @GetMapping()
-    @Secured({"CUSTOMER","MERCHANT"})
+    @Secured({"CUSTOMER", "MERCHANT"})
     public ResponseEntity<Response> getAllProducts(
             @RequestParam("id") @Nullable String merchantId,
             @RequestParam("open") @Nullable Boolean isOpen
