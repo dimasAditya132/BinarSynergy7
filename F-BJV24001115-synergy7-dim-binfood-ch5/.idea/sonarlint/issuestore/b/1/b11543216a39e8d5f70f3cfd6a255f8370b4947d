@@ -1,0 +1,12 @@
+
+¢
+java:S1488N"`Immediately return this expression instead of assigning it to the temporary variable "delegate".(„áÄ^8‰ä««ı1J$758efeda-fb46-4634-8383-95fd5c71f065
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(àşæüÿÿÿÿ8ÿò¨«ı1J$44b8fd0b-f005-4ce6-8203-e1d4f4aaaf2c
+t
+java:S1611G"1Remove the parentheses around the "web" parameter(¥»çñ8ÿÂ««ı1J$2bf757fd-35b2-469a-940b-30477fcfc255
+“
+java:S1128"KRemove this unused import 'org.springframework.security.config.Customizer'.(Ïóœ¬ùÿÿÿÿ8ÇÖ×Ãı1J$48ae3826-503e-47c0-91cb-c1cd5243eac2
+µ
+java:S1128"rRemove this unused import 'org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer'.(Ç¼Î8ÇÖ×Ãı1J$159c4d9c-80de-4704-9a46-48b7b9b4e051
+¢
+java:S1128"_Remove this unused import 'org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser'.(ÀºÇÇ8ÈÖ×Ãı1J$d0062fc1-efa3-49dd-bea9-35585f814ef9

@@ -1,0 +1,8 @@
+
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»ò¡C8¤Â²Äû1J$ee63fbb4-1b8f-4416-b31e-ddead530ad6e
+o
+java:S6204#"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8€¢™ ı1
+o
+java:S6204*"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8‰¢™ ı1
+k
+java:S1612)"IReplace this lambda with method reference 'GrantedAuthority.class::cast'.(ñÜ¼øÿÿÿÿ8—¢™ ı1

@@ -1,0 +1,5 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8Â¿Æ¥ú1J$4e29aee8-7ff9-44a2-a7f6-0afe8d991b1d
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å°äİ8È¿Æ¥ú1J$868022a7-0973-4e8f-8fd8-e877dda01a7a
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ş¿Æ¥ú1J$f77669df-ec22-45dd-ab4e-81779696669d

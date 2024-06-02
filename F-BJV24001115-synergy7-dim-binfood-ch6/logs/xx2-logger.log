@@ -1,0 +1,207 @@
+2024-06-02 02:55:55,330 INFO o.s.b.StartupInfoLogger [main] Starting BinFoodApplication using Java 22 with PID 13692 (C:\Users\dimas\IdeaProjects\Chapter6\BinFood\target\classes started by dimas in C:\Users\dimas\IdeaProjects\Chapter6)
+2024-06-02 02:55:55,340 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-02 02:55:57,682 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-02 02:55:57,820 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 120 ms. Found 5 JPA repository interfaces.
+2024-06-02 02:55:58,911 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-06-02 02:55:58,929 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-06-02 02:55:58,933 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-06-02 02:55:58,933 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-02 02:55:59,058 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-06-02 02:55:59,059 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3547 ms
+2024-06-02 02:55:59,082 ERROR o.s.b.w.e.t.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'userDetailService': No qualifying bean of type 'com.example.BinFood.security.service.UserDetailsServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-02 02:55:59,141 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2024-06-02 02:55:59,163 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-02 02:55:59,184 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-02 02:55:59,261 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userDetailService in com.example.BinFood.security.SecurityConfig required a bean of type 'com.example.BinFood.security.service.UserDetailsServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.BinFood.security.service.UserDetailsServiceImpl' in your configuration.
+
+2024-06-02 14:58:20,552 INFO o.s.b.StartupInfoLogger [main] Starting BinFoodApplication using Java 22 with PID 7948 (C:\Users\dimas\IdeaProjects\Chapter6\BinFood\target\classes started by dimas in C:\Users\dimas\IdeaProjects\Chapter6)
+2024-06-02 14:58:20,561 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-02 14:58:23,225 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-02 14:58:23,412 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 166 ms. Found 6 JPA repository interfaces.
+2024-06-02 14:58:24,693 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-06-02 14:58:24,715 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-06-02 14:58:24,719 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-06-02 14:58:24,720 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-02 14:58:24,864 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-06-02 14:58:24,866 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4127 ms
+2024-06-02 14:58:24,919 ERROR o.s.b.w.e.t.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityConfig' defined in file [C:\Users\dimas\IdeaProjects\Chapter6\BinFood\target\classes\com\example\BinFood\security\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.example.BinFood.security.service.UserDetailsServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-02 14:58:25,010 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2024-06-02 14:58:25,041 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-02 14:58:25,061 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-02 14:58:25,243 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.BinFood.security.SecurityConfig required a bean of type 'com.example.BinFood.security.service.UserDetailsServiceImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.BinFood.security.service.UserDetailsServiceImpl' in your configuration.
+
+2024-06-02 19:52:48,353 INFO o.s.b.StartupInfoLogger [main] Starting BinFoodApplication using Java 22 with PID 19116 (C:\Users\dimas\IdeaProjects\Chapter6\BinFood\target\classes started by dimas in C:\Users\dimas\IdeaProjects\Chapter6)
+2024-06-02 19:52:48,365 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-02 19:52:51,138 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-02 19:52:51,337 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 180 ms. Found 6 JPA repository interfaces.
+2024-06-02 19:52:52,745 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-06-02 19:52:52,770 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-06-02 19:52:52,774 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-06-02 19:52:52,775 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-02 19:52:52,949 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-06-02 19:52:52,953 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4428 ms
+2024-06-02 19:52:53,351 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-02 19:52:53,516 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-02 19:52:53,618 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-02 19:52:54,308 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-02 19:52:54,381 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-02 19:52:54,861 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d0fabc8
+2024-06-02 19:52:54,866 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-02 19:52:54,991 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-02 19:52:59,334 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-02 19:52:59,745 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-02 19:53:00,517 ERROR o.s.b.w.e.t.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityConfig' defined in file [C:\Users\dimas\IdeaProjects\Chapter6\BinFood\target\classes\com\example\BinFood\security\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'com.example.BinFood.security.jwt.JwtUtils' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-02 19:53:00,578 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2024-06-02 19:53:00,583 WARN o.a.j.l.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+2024-06-02 19:53:00,584 WARN o.a.j.l.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+2024-06-02 19:53:00,589 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-02 19:53:00,590 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-02 19:53:00,595 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-06-02 19:53:00,609 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-06-02 19:53:00,640 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-02 19:53:00,743 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.example.BinFood.security.SecurityConfig required a bean of type 'com.example.BinFood.security.jwt.JwtUtils' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.BinFood.security.jwt.JwtUtils' in your configuration.
+
+2024-06-02 19:55:03,346 INFO o.s.b.StartupInfoLogger [main] Starting BinFoodApplication using Java 22 with PID 480 (C:\Users\dimas\IdeaProjects\Chapter6\BinFood\target\classes started by dimas in C:\Users\dimas\IdeaProjects\Chapter6)
+2024-06-02 19:55:03,354 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-02 19:55:05,912 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-02 19:55:06,164 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 229 ms. Found 6 JPA repository interfaces.
+2024-06-02 19:55:07,710 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-06-02 19:55:07,731 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-06-02 19:55:07,735 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-06-02 19:55:07,735 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-02 19:55:07,893 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-06-02 19:55:07,896 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4381 ms
+2024-06-02 19:55:08,305 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-02 19:55:08,442 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-02 19:55:08,532 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-02 19:55:09,167 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-02 19:55:09,236 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-02 19:55:09,690 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ba0018e
+2024-06-02 19:55:09,695 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-02 19:55:09,771 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-02 19:55:12,454 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-02 19:55:12,717 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-02 19:55:13,886 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-02 19:55:14,338 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-02 19:55:15,101 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12d24c43, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bf27411, org.springframework.security.web.context.SecurityContextHolderFilter@56114349, org.springframework.security.web.header.HeaderWriterFilter@4a4979bf, org.springframework.security.web.authentication.logout.LogoutFilter@cc4a0dd, com.example.BinFood.security.jwt.JwtAuthTokenFilter@277dddcf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d6abfc7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f5d587c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a66949a, org.springframework.security.web.session.SessionManagementFilter@29f72685, org.springframework.security.web.access.ExceptionTranslationFilter@7a087132, org.springframework.security.web.access.intercept.AuthorizationFilter@68823b6b]
+2024-06-02 19:55:15,894 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 19:55:15,894 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/webjars/**']
+2024-06-02 19:55:15,895 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 19:55:15,895 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/images/**']
+2024-06-02 19:55:15,896 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 19:55:15,896 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/css/**']
+2024-06-02 19:55:15,896 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/assets/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 19:55:15,897 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/assets/**']
+2024-06-02 19:55:15,897 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 19:55:15,897 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/favicon.ico']
+2024-06-02 19:55:16,046 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2024-06-02 19:55:16,085 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path ''
+2024-06-02 19:55:16,108 INFO o.s.b.StartupInfoLogger [main] Started BinFoodApplication in 14.406 seconds (process running for 17.093)
+2024-06-02 19:59:41,840 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-02 19:59:41,845 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-02 19:59:41,856 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-02 19:59:56,865 INFO o.s.b.StartupInfoLogger [main] Starting BinFoodApplication using Java 22 with PID 18696 (C:\Users\dimas\IdeaProjects\Chapter6\BinFood\target\classes started by dimas in C:\Users\dimas\IdeaProjects\Chapter6)
+2024-06-02 19:59:56,877 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-02 19:59:59,801 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-02 20:00:00,058 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 234 ms. Found 6 JPA repository interfaces.
+2024-06-02 20:00:02,047 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-06-02 20:00:02,070 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-06-02 20:00:02,074 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-06-02 20:00:02,074 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-02 20:00:02,230 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-06-02 20:00:02,233 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5163 ms
+2024-06-02 20:00:02,816 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-02 20:00:02,981 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-02 20:00:03,086 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-02 20:00:03,902 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-02 20:00:03,980 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-02 20:00:04,379 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27a90ce5
+2024-06-02 20:00:04,384 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-02 20:00:04,469 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-02 20:00:07,537 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-02 20:00:07,802 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-02 20:00:09,066 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-02 20:00:09,472 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-02 20:00:10,196 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a16ee0d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1444e35f, org.springframework.security.web.context.SecurityContextHolderFilter@77eb76f, org.springframework.security.web.header.HeaderWriterFilter@6aa7d7a0, org.springframework.security.web.authentication.logout.LogoutFilter@1ed17eaf, com.example.BinFood.security.jwt.JwtAuthTokenFilter@cdc09d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c815478, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1efa258e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f563397, org.springframework.security.web.session.SessionManagementFilter@760f4310, org.springframework.security.web.access.ExceptionTranslationFilter@4700db93, org.springframework.security.web.access.intercept.AuthorizationFilter@3049dcac]
+2024-06-02 20:00:11,254 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 20:00:11,255 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/webjars/**']
+2024-06-02 20:00:11,255 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 20:00:11,256 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/images/**']
+2024-06-02 20:00:11,256 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 20:00:11,256 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/css/**']
+2024-06-02 20:00:11,257 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/assets/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 20:00:11,257 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/assets/**']
+2024-06-02 20:00:11,257 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-02 20:00:11,258 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/favicon.ico']
+2024-06-02 20:00:11,378 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2024-06-02 20:00:11,435 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path ''
+2024-06-02 20:00:11,460 INFO o.s.b.StartupInfoLogger [main] Started BinFoodApplication in 16.226 seconds (process running for 18.751)
+2024-06-02 21:19:02,425 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m26s729ms823µs500ns).
+2024-06-02 21:22:43,144 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-02 21:22:43,230 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-02 21:22:43,256 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

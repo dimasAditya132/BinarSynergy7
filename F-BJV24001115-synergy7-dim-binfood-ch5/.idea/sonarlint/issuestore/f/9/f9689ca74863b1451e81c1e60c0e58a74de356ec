@@ -1,0 +1,8 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆË½ùÿÿÿÿ8“’€û1J$ae3a5fca-2161-4a66-85bd-6b1ea8c7f49c
+r	java:S106)"+Replace this use of System.out by a logger.(¤êà¬ıÿÿÿÿ8õ’€û1J$f2d2f538-069a-4732-b1f1-5ae9fcae7d1a
+r	java:S106:"+Replace this use of System.out by a logger.(ğŒ’¸ÿÿÿÿÿ8“€û1J$6f82b2ef-80e6-4298-9595-7705d5585634
+r	java:S106V"+Replace this use of System.out by a logger.(Ö‘Ã‡úÿÿÿÿ8™“€û1J$3746e346-b84e-4c87-981b-62d2e1a42403
+r	java:S106Y"+Replace this use of System.out by a logger.(’…Œ§úÿÿÿÿ8 “€û1J$038f00b7-7c7a-4daa-bb30-c42657f94d7d
+y
+java:S1068"1Remove this unused "jasperService" private field.(ıŠÛ±üÿÿÿÿ8»“€û1J$eebd6a8f-eb37-4191-879b-241787923473

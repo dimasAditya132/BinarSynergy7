@@ -1,0 +1,34 @@
+2024-05-31 23:05:54,298 INFO o.s.b.StartupInfoLogger [main] Starting BinFoodApplication using Java 22 with PID 19156 (C:\Users\dimas\IdeaProjects\Chapter6\BinFood\target\classes started by dimas in C:\Users\dimas\IdeaProjects\Chapter6)
+2024-05-31 23:05:54,310 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-31 23:06:00,300 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-31 23:06:00,553 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 234 ms. Found 5 JPA repository interfaces.
+2024-05-31 23:06:02,783 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-05-31 23:06:02,810 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-31 23:06:02,816 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-31 23:06:02,816 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-31 23:06:03,270 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-31 23:06:03,273 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 8376 ms
+2024-05-31 23:06:03,367 ERROR o.s.b.w.e.t.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'userDetailService': No qualifying bean of type 'com.example.BinFood.security.service.UserDetailsServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-05-31 23:06:03,460 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2024-05-31 23:06:03,520 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-05-31 23:06:03,551 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-31 23:06:03,651 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userDetailService in com.example.BinFood.security.SecurityConfig required a bean of type 'com.example.BinFood.security.service.UserDetailsServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.BinFood.security.service.UserDetailsServiceImpl' in your configuration.
+
