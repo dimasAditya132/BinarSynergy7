@@ -1,9 +1,11 @@
 package com.example.service;
 
+import com.example.stream.data.EmailSendOtpDto;
+
 public interface MailService {
     void sendEmail(String to, String subject, String message);
 
-    void sendVerificationEmail(String to, String username, String otp);
+    void sendVerificationEmail(EmailSendOtpDto sendOtpDto);
 
-    void sendResetPasswordEmail(String to, String username, String resetPasswordUrl);
+    void sendResetPasswordEmail(EmailSendOtpDto sendOtpDto);
 }

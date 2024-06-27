@@ -18,9 +18,20 @@ public class MessageConsumer {
     public void handleMessage(String message) {
         try {
             EmailSendOtpDto emailSendOtpDto = objectMapper.readValue(message, EmailSendOtpDto.class);
-            mailService.sendVerificationEmail(emailSendOtpDto.getTo(), emailSendOtpDto.getUsername(), emailSendOtpDto.getOtp());
+            mailService.sendVerificationEmail(emailSendOtpDto);
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
+
+    @KafkaListener(topics = "email-forgot-password")
+    public void consumeResetPasswordEmail(String message) {
+        try {
+            EmailSendOtpDto sendOtpDto = objectMapper.readValue(message, EmailSendOtpDto.class);
+            mailService.sendResetPasswordEmail(sendOtpDto);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        }
 }

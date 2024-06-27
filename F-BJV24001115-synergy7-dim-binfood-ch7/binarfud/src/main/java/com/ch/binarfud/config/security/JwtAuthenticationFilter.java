@@ -1,12 +1,11 @@
 package com.ch.binarfud.config.security;
 
+import com.ch.binarfud.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,8 +17,6 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.servlet.HandlerExceptionResolver;
-
-import com.ch.binarfud.service.JwtService;
 
 import java.io.IOException;
 
@@ -40,12 +37,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         this.handlerExceptionResolver = handlerExceptionResolver;
     }
 
-    /*@Autowired
-    JwtService jwtService;
-    @Autowired
-    UserDetailsService userDetailsService;
-    @Autowired
-    HandlerExceptionResolver handlerExceptionResolver;*/
 
     @Override
     protected void doFilterInternal(

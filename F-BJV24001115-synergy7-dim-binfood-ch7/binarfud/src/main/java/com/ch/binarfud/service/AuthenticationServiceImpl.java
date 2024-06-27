@@ -5,6 +5,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
 
+import com.ch.binarfud.stream.data.MessageProducer;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -39,7 +40,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private final AuthenticationManager authenticationManager;
     private final UserRepository userRepository;
     private final OtpRepository otpRepository;
-    private final MailService mailService;
+
+    private final MessageProducer messageProducer;
 
     public AuthenticationServiceImpl(
             ModelMapper modelMapper,
@@ -48,14 +50,14 @@ public class AuthenticationServiceImpl implements AuthenticationService {
             AuthenticationManager authenticationManager,
             UserRepository userRepository,
             OtpRepository otpRepository,
-            MailService mailService) {
+            MessageProducer messageProducer) {
         this.modelMapper = modelMapper;
         this.jwtService = jwtService;
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
         this.userRepository = userRepository;
-        this.otpRepository = otpRepository;
-        this.mailService = mailService;
+        this.otpRepository = otpRepository;;
+        this.messageProducer = messageProducer;
     }
 
     private Random random = new Random();
@@ -124,7 +126,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
         Otp otp = createOtp(savedUser, Otp.Type.REGISTRATION);
 
-        mailService.sendVerificationEmail(savedUser.getEmail(), savedUser.getUsername(), otp.getCode());
+        messageProducer.sendVerificationEmail(savedUser.getEmail(), savedUser.getUsername(), otp.getCode());
 
         SignupResponseDto signupResponseDto = modelMapper.map(savedUser, SignupResponseDto.class);
         String[] tokens = jwtService.generateToken(savedUser);
@@ -147,7 +149,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
         Otp otp = createOtp(user, Otp.Type.REGISTRATION);
 
-        mailService.sendVerificationEmail(user.getEmail(), user.getUsername(), otp.getCode());
+        messageProducer.sendVerificationEmail(user.getEmail(), user.getUsername(), otp.getCode());
     }
 
     @Override
@@ -182,7 +184,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         if (user.isPresent()) {
             Otp otp = createOtp(user.get(), Otp.Type.PASSWORD_RESET);
 
-            mailService.sendResetPasswordEmail(user.get().getEmail(), user.get().getUsername(), otp.getCode());
+            messageProducer.sendForgotPasswordEmail(user.get().getEmail(), user.get().getUsername(), otp.getCode());
         } else {
             String errorMessage = isUsername ? "Username not found." : "Email not found.";
 
