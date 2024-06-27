@@ -801,3 +801,139 @@ Unconditional classes:
 2024-06-28 02:59:27,600 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-06-28 02:59:27,926 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2024-06-28 02:59:28,034 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-28 02:59:41,013 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-06-28 02:59:41,116 INFO o.s.b.StartupInfoLogger [restartedMain] Starting BinarfudApplication using Java 22 with PID 17192 (C:\Users\dimas\IdeaProjects\Github\BinarSynergy7\F-BJV24001115-synergy7-dim-binfood-ch7\binarfud\target\classes started by dimas in C:\Users\dimas\IdeaProjects\Github\BinarSynergy7\F-BJV24001115-synergy7-dim-binfood-ch7\binarfud)
+2024-06-28 02:59:41,121 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-06-28 02:59:41,483 INFO o.s.b.l.DeferredLog [restartedMain] The Class-Path manifest attribute in C:\Users\dimas\.m2\repository\org\apache\kafka\kafka-clients\3.7.0\kafka-clients-3.7.0.jar referenced one or more files that do not exist: file:/C:/Users/dimas/.m2/repository/org/apache/kafka/kafka-clients/3.7.0/zstd-jni-1.5.5-6.jar,file:/C:/Users/dimas/.m2/repository/org/apache/kafka/kafka-clients/3.7.0/lz4-java-1.8.0.jar,file:/C:/Users/dimas/.m2/repository/org/apache/kafka/kafka-clients/3.7.0/snappy-java-1.1.10.5.jar,file:/C:/Users/dimas/.m2/repository/org/apache/kafka/kafka-clients/3.7.0/slf4j-api-1.7.36.jar
+2024-06-28 02:59:41,484 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-28 02:59:41,485 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-28 02:59:45,303 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28 02:59:45,625 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 298 ms. Found 8 JPA repository interfaces.
+2024-06-28 02:59:48,630 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-06-28 02:59:48,654 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-06-28 02:59:48,659 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-28 02:59:48,660 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-28 02:59:49,000 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-28 02:59:49,003 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 7514 ms
+2024-06-28 02:59:49,479 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28 02:59:50,225 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-28 02:59:50,404 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-06-28 02:59:52,633 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28 02:59:52,729 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-06-28 02:59:53,363 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@118b6766
+2024-06-28 02:59:53,366 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-06-28 02:59:53,530 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-28 02:59:56,858 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-28 02:59:57,259 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28 02:59:58,025 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-28 02:59:58,608 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-28 02:59:59,318 INFO o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [restartedMain] Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-28 02:59:59,320 WARN o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-28 03:00:01,028 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7fb29921, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6aa3a6e2, org.springframework.security.web.context.SecurityContextHolderFilter@1f5b7178, org.springframework.security.web.header.HeaderWriterFilter@2fa0aba0, org.springframework.web.filter.CorsFilter@7156e0cf, org.springframework.security.web.authentication.logout.LogoutFilter@309e9d96, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@62ddee07, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@14e02c91, com.ch.binarfud.config.security.JwtAuthenticationFilter@2bf761b4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@24effc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@26e8ff4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3be3ff8b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18214d56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4df80126, org.springframework.security.web.session.SessionManagementFilter@64aa8c9, org.springframework.security.web.access.ExceptionTranslationFilter@35193bcf, org.springframework.security.web.access.intercept.AuthorizationFilter@6076210c]
+2024-06-28 03:00:01,540 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-06-28 03:00:03,133 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-06-28 03:00:03,207 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-06-28 03:00:03,259 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path '/'
+2024-06-28 03:00:03,283 INFO o.s.b.StartupInfoLogger [restartedMain] Started BinarfudApplication in 24.384 seconds (process running for 28.188)
+2024-06-28 03:00:26,167 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-28 03:00:26,168 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-06-28 03:00:26,174 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 6 ms
+2024-06-28 03:00:28,397 INFO o.a.k.c.c.AbstractConfig [http-nio-8081-exec-1] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = binarfud-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-06-28 03:00:28,561 INFO o.a.k.c.t.i.KafkaMetricsCollector$StateLedger [http-nio-8081-exec-1] initializing Kafka metrics collector
+2024-06-28 03:00:28,636 INFO o.a.k.c.p.KafkaProducer [http-nio-8081-exec-1] [Producer clientId=binarfud-producer-1] Instantiated an idempotent producer.
+2024-06-28 03:00:28,892 INFO o.a.k.c.u.AppInfoParser$AppInfo [http-nio-8081-exec-1] Kafka version: 3.7.0
+2024-06-28 03:00:28,893 INFO o.a.k.c.u.AppInfoParser$AppInfo [http-nio-8081-exec-1] Kafka commitId: 2ae524ed625438c5
+2024-06-28 03:00:28,893 INFO o.a.k.c.u.AppInfoParser$AppInfo [http-nio-8081-exec-1] Kafka startTimeMs: 1719518428884
+2024-06-28 03:00:30,928 INFO o.a.k.c.Metadata [kafka-producer-network-thread | binarfud-producer-1] [Producer clientId=binarfud-producer-1] Cluster ID: QU5zEuRoRVmWNlxXnVTALw
+2024-06-28 03:00:30,930 INFO o.a.k.c.p.i.TransactionManager [kafka-producer-network-thread | binarfud-producer-1] [Producer clientId=binarfud-producer-1] ProducerId set to 3 with epoch 0
