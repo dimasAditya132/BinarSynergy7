@@ -42,8 +42,8 @@ public class KafkaConsumerConfig {
         return new ObjectMapper();
     }
 
-    @Bean
-    public JavaMailSender javaMailSender() {
-        return new JavaMailSenderImpl();
-    }
+//    @Bean
+//    public JavaMailSender javaMailSender() {
+//        return new JavaMailSenderImpl();
+//    }
 }

@@ -33,5 +33,5 @@ public class MessageConsumer {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        }
+    }
 }
