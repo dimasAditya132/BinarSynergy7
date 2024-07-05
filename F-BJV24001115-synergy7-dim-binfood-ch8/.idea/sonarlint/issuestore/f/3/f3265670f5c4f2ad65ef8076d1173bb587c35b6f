@@ -1,0 +1,6 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´ş ˆ2J$12c1f50c-6b3c-4736-86f1-d1be068872ab
+m	java:S106"+Replace this use of System.out by a logger.(‹ùŞÔ8ï™  ˆ2J$32127434-72f8-4f83-841b-dc98a2753306
+{
+java:S1068"3Remove this unused "messageProducer" private field.(š¾•ÿÿÿÿÿ8´ÿ ˆ2J$e6fa68b9-dc83-43c2-ae42-306bcd46eb8b
